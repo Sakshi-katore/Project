@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Font */
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Sticky Navbar */
+        .navbar {
+            position: sticky;
+            top: 0;
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            font-size: 1.5em;
+        }
+
+        .navbar .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        /* Intro Section */
+        .intro-section {
+            display: flex;
+            align-items: center;
+            padding: 50px;
+            background-color: #f4f4f4;
+        }
+
+        .intro-text {
+            max-width: 50%;
+        }
+
+        .intro-text h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .intro-text p {
+            margin-bottom: 20px;
+        }
+
+        .intro-text button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .intro-image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Contact Us Section */
+        .contact-section {
+            padding: 50px;
+            background-color: #fff;
+        }
+
+        .contact-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .contact-section form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-section input,
+        .contact-section textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-section input:focus,
+        .contact-section textarea:focus {
+            outline: none;
+        }
+
+        .contact-section button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Table Section */
+        .table-section {
+            padding: 50px;
+            background-color: #f4f4f4;
+        }
+
+        .table-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .table-section table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .table-section th,
+        .table-section td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+
+        .table-section tfoot td {
+            font-weight: bold;
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Sticky Navbar -->
+<header class="navbar">
+    <div class="logo">Startup Logo</div>
+    <nav class="nav-links">
+        <a href="#intro">Intro</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#table">Table</a>
+    </nav>
+</header>
+
+<!-- Intro Section -->
+<section id="intro" class="intro-section">
+    <div class="intro-text">
+        <h1>Welcome to Our Startup</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+        <button>Learn More</button>
+    </div>
+    <div class="intro-image">
+        <img src="jeff-bezos.png" alt="Jeff Bezos">
+    </div>
+</section>
+
+<!-- Contact Us Section -->
+<section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<!-- Table Section -->
+<section id="table" class="table-section">
+    <h2>Our Data Table</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>John Doe</td>
+            <td>john@example.com</td>
+        </tr>
+        <!-- Add more rows as needed -->
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="3">Footer Content</td>
+        </tr>
+        </tfoot>
+    </table>
+</section>
+
+</body>
+</html>
